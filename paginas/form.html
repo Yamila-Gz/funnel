@@ -31,13 +31,14 @@
             <a href="../paginas/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
-    <section>
-        <h1>Completa tus Datos</h1>
+    <section class="completa">
+        
         <form onsubmit="submitForm(event)">
+            <h1>Completa tus Datos</h1>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name"  placeholder="Cosme Fulanito" required>
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" placeholder="cosmefulanito@gmail.com" required>
             <button type="submit">Continuar</button>
         </form>
     </section>
