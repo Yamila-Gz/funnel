@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colifas</title>
+    <link rel="stylesheet" href="../estilo/estilos.css">
+</head>
+
+<body>
+    <!--animacion-------------------------------->
+    <div class="contenedor_animacion">
+        <div class="animacion">
+            <p>ENVIOS A TODO EL PAIS</p>
+            <p>3 CUOTAS SIN INTERES</p>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../imagenes/icon.ico" alt="Logo"></a>
+        </div>
+    
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="../paginas/form.html" onclick="nextStep('form')">registrate</a></li>
+                <li><a href="../paginas/store.html" onclick="nextStep('store')">Tienda</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="../paginas/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Selecciona tus Productos</h1>
+            <div class="product-card">
+                
+                <div class="item">
+                    <h2>Producto A</h2>
+                    <img src="../imagenes/carrito-de-compras.ico">
+                    <p>Descripción del Producto A.</p>
+                    <span>$100</span>
+                    <button onclick="addToCart('Producto A', 100)">Agregar al carrito</button>
+
+                </div>
+            </div>
+
+            <div class="product-card">
+                <h2>Producto B</h2>
+                <p>Descripción del Producto B.</p>
+                <span>$100</span>
+                <button onclick="addToCart('Producto A', 100)">Agregar al carrito</button>
+            </div>
+
+            <div class="product-card">
+                <h2>Producto C</h2>
+                <p>Descripción del Producto C.</p>
+                <span>$100</span>
+                <button onclick="addToCart('Producto A', 100)">Agregar al carrito</button>
+            </div>
+
+            <div class="product-card">
+                <h2>Producto D</h2>
+                <p>Descripción del Producto D.</p>
+                <span>$100</span>
+                <button onclick="addToCart('Producto A', 100)">Agregar al carrito</button>
+            </div>
+            <!-- Más productos -->
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2024 Colifas. Todos los derechos reservados.</p>
+
+        <div class="social">
+            <a href="https://wa.me/5491169705280" target="_blank">Whatsapp</a>
+            <a href="https://www.instagram.com/colifas_sublimaciones" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script> 
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colifas</title>
+    <link rel="stylesheet" href="./estilo/estilos.css">
+</head>
+
+<body>
+    <!--animacion-------------------------------->
+    <div class="contenedor_animacion">
+        <div class="animacion">
+            <p>ENVIOS A TODO EL PAIS</p>
+            <p>3 CUOTAS SIN INTERES</p>
+        </div>
+    </div>
+    <header>
+        <!-- inicio -->
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./imagenes/icon.ico" alt="logo de empresa"></img>
+            </a>
+        </div>
+
+        </div>
+        <!-- Barra de navegación (nuevoas clases e icono)-->
+
+        <nav class="navar">
+            <i class="fa-solid fa-bars"></i>
+            <!-- (nuevo div)-->
+            <div class="container-support">
+                <div class="customer-support">
+                    <div class="content-customer-suport">
+
+                        <a href="https://wa.me/5491169705280" target="_blank"><i class="fa-solid fa-headset"></i> </a>
+                        <div>Soporte al cliente</div>
+                    </div>
+                </div>
+
+            </div>
+            <ul>
+                <li><a href="./paginas/form.html" onclick="nextStep('form')">registrate</a></li>
+                <li><a href="./paginas/store.html" onclick="nextStep('store')">Tienda</a></li>
+            </ul>
+
+        </nav>
+
+
+
+        <div class="cart">
+            <a href="./paginas/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+    <section class="voucher">
+        <div class="content-voucher">
+            <p>SALE SALE</p>
+            <h2>15% off<br> Todas las gorras</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+    <main>
+        <!--section principal dirige al form-->
+        <section class="main-bienvenida">
+            <h1>Bienvenido a Nuestra Tienda</h1>
+            <button onclick="location.href='form.html'">Comenzar</button>
+        </section>
+
+        <section>
+            <section class="container container-faetures">
+                <div class="card-feature">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <div class="feature-content">
+                        <span>Formas de pago</span>
+                        <p>Todos los medios de pago</p>
+                    </div>
+                </div>
+                <div class="card-feature">
+                    <i class="fa-solid fa-wallet"></i>
+                    <div class="feature-content">
+                        <span>Reembolso</span>
+                        <p>Devolución de dinero</p>
+                    </div>
+                </div>
+                <div class="card-feature">
+                    <i class="fa-solid fa-gift"></i>
+                    <div class="feature-content">
+                        <span>GifCard</span>
+                        <p>Ofrece bonos especiales</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2024 Colifas. Todos los derechos reservados.</p>
+
+        <div class="social">
+            <a href="https://wa.me/5491169705280" target="_blank">Whatsapp</a>
+            <a href="https://www.instagram.com/colifas_sublimaciones" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
