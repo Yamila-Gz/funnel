@@ -447,11 +447,134 @@ a {
     margin-bottom: 3rem;
 }
 
-.container-cardproduct {
+.container-product{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
 }
+.card-product{
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.container-i{
+    position: relative;
+}
+
+.container-i img{
+    width: 100%;
+}
+
+.container-i .disc{
+    position: absolute;
+    left: 0;
+    background-color: var(--terc-color);
+    color: var(--background-color);
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+.container-i .disc:hover{
+    background-color: var(--primary-color);
+}
+
+.button-top{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: absolute;
+    top:0;
+    right: -3rem;
+    z-index: -1;
+    transition: all .4s ease;
+}
+.button-top span{
+    border: 1px solid var(--terc-color);
+    padding: .8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+ }
+ .button-top span:hover{
+    background-color: var(--primary-color);
+ }
+.card-product:hover .button-top{
+    z-index: 0;
+    right: -1rem;
+    
+}
+
+
+
+.content-cardproduct{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content)
+    /*row-gap:auto;*/
+    
+
+}
+.content-cardproduct h3{
+   grid-row: 2/3;
+   grid-column: 1/-1;
+
+   font-weight: 400;
+   font-size: 1.6rem;
+   margin-bottom: 1rem;
+   cursor: pointer;
+}
+.content-cardproduct h3:hover{
+    color: #fff;
+}
+.addcart{
+    justify-self: start;
+    border: 2px solid var(--terc-color);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addcart:hover{
+    background-color: var(--terc-color);
+}
+.addcart i{
+    font-size: 1.5rem;
+    color: var(--terc-color);
+}
+.addcart:hover i{
+    color: #fff;
+}
+.content-cardproduct .precio{
+    justify-self: end;
+    align-self: center;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+.content-cardproduct .precio span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--terc-color);
+    margin-left: .5rem;
+}
+
+
+
+
 
 
 /* fin de section lo nuevo form*/
