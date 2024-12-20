@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colifas</title>
     <link rel="stylesheet" href="../estilo/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -20,7 +23,7 @@
         <div class="logo">
             <a href="../index.html"><img src="../imagenes/icon.ico" alt="Logo"></a>
         </div>
-    
+
         <!-- Barra de navegación -->
         <nav>
             <ul>
@@ -32,15 +35,15 @@
             <a href="../paginas/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
-    
+
     <main>
         <section>
-            <h1>Selecciona tus Productos</h1>
+            <h1 class="reutilizable-1">Selecciona tus Productos</h1>
             <div class="product-card">
-                
+
                 <div class="item">
                     <h2>Producto A</h2>
-                    <img src="../imagenes/carrito-de-compras.ico">
+                    
                     <p>Descripción del Producto A.</p>
                     <span>$100</span>
                     <button onclick="addToCart('Producto A', 100)">Agregar al carrito</button>
@@ -68,23 +71,218 @@
                 <span>$100</span>
                 <button onclick="addToCart('Producto A', 100)">Agregar al carrito</button>
             </div>
-            <!-- Más productos -->
+
+        </section>
+
+        <h1 class="reutilizable-1"> Teams BEAUTY </h1>
+
+        <section class="container specials">
+            <div class="container-product">
+                <!-- 1 producto -->
+                <div class="card-product">
+                    <div class="container-i">
+                        <img src="../imagenes/lipsticks-5893472_640.jpg" alt="labial tonos rojos">
+                        <span class="disc"> -10%</span>
+                        <div class="button-top">
+                            <span><i class="fa-regular fa-eye"></i></span>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </div>
+                    <div class="content-cardproduct">
+                        <h3>Labial</h3>
+                        <span class="addcart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="precio">$9000 <span>$9900</span></p>
+                    </div>
+                </div>
+
+                <!-- 2 producto -->
+                <div class="card-product">
+                    <div class="container-i">
+                        <img src="../imagenes/manicure-870857_640.jpg" alt="Esmalte para uñas multicolores">
+                        <span class="disc"> -5%</span>
+                        <div class="button-top">
+                            <span><i class="fa-regular fa-eye"></i></span>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </div>
+                    <div class="content-cardproduct">
+                        <h3>Esmalte</h3>
+                        <span class="addcart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="precio">$5000 <span>$5250</span></p>
+                    </div>
+                </div>
+                <!-- 3 producto -->
+                <div class="card-product">
+                    <div class="container-i">
+                        <img src="../imagenes/cosmetics-9086984_640-Photoroom.png" alt="Sombra para ojos multicolor">
+                        <span class="disc"> -10%</span>
+                        <div class="button-top">
+                            <span><i class="fa-regular fa-eye"></i></span>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </div>
+                    <div class="content-cardproduct">
+                        <h3>Sombra</h3>
+                        <span class="addcart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="precio">$20000 <span>$23000</span>
+                    </div>
+                    </p>
+                </div>
+                <!-- 4 producto -->
+                <div class="card-product">
+                    <div class="container-i">
+                        <img src="../imagenes/perfume-6911449_640.jpg" alt="perfume">
+
+                        <div class="button-top">
+                            <span><i class="fa-regular fa-eye"></i></span>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </div>
+                    <div class="content-cardproduct">
+                        <h3>JASMINNE HIRSCH <br> Body EDT</h3>
+                        <span class="addcart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="precio">$50000</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <h2 class="reutilizable-1">Ultimas reseñas</h2>
+        <section class="container review">
+            <div class="container-review">
+                <div class="card-review">
+                    <div class="conteiner-img">
+                        <img src="../imagenes/feedback-1977987_640.jpg" alt="imagen de reseña">
+                        <div class="button-g-review">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+    
+                        </div>
+                    </div>
+                    <div class="content-review">
+                        <h3>lorem, ipsum dolor</h3>
+                        <span>29 Noviembre 2024</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur soluta placeat aperiam
+                            reiciendis dicta incidunt, iure dolorem repellendus assumenda quisquam autem animi. Vel ipsum
+                            pariatur odit in quisquam at!
+                        </p>
+                        <div class="btn-read-more">Leer mas</div>
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div class="conteiner-img">
+                        <img src="../imagenes/feedback-1977986_640.jpg" alt="imagen de reseña">
+                        <div class="button-g-review">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+    
+                        </div>
+                    </div>
+                    <div class="content-review">
+                        <h3>lorem, ipsum dolor</h3>
+                        <span>29 Noviembre 2024</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur soluta placeat aperiam
+                            reiciendis dicta incidunt, iure dolorem repellendus assumenda quisquam autem animi. Vel ipsum
+                            pariatur odit in quisquam at!
+                        </p>
+                        <div class="btn-read-more">Leer mas</div>
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div class="conteiner-img">
+                        <img src="../imagenes/review-5207277_640.jpg" alt="imagen de reseña">
+                        <div class="button-g-review">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+    
+                        </div>
+                    </div>
+                    <div class="content-review">
+                        <h3>lorem, ipsum dolor</h3>
+                        <span>29 Noviembre 2024</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur soluta placeat aperiam
+                            reiciendis dicta incidunt, iure dolorem repellendus assumenda quisquam autem animi. Vel ipsum
+                            pariatur odit in quisquam at!
+                        </p>
+                        <div class="btn-read-more">Leer mas</div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
 
-        <p>&copy; 2024 Colifas. Todos los derechos reservados.</p>
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Informacion de Contactos</p>
+                    <ul>
+                        <li>Direccion: Falsa 123 </li>
+                        <li>Telefono: 011-9111111111</li>
+                        <li>Email:colifas@gmail.com</li>
+                        <li>Horarios:L a V de 10 a 17 hs</li>
+                    </ul>
+                </div>
 
-        <div class="social">
-            <a href="https://wa.me/5491169705280" target="_blank">Whatsapp</a>
-            <a href="https://www.instagram.com/colifas_sublimaciones" target="_blank">Instagram</a>
+                <div class="social">
+                    <p class="title-footer">Follow as!</p>
+                    <a href="https://wa.me/5491169705280" target="_blank"><i
+                            class="fa-brands fa-whatsapp whatsapp"></i></a>
+                    <a href="https://www.instagram.com/colifas_sublimaciones" target="_blank"><i
+                            class="fa-brands fa-instagram instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i
+                            class="fa-brands fa-facebook facebook"></i></a>
+                </div>
+
+                <div class="copyrigt">
+                    <p class="title-footer">Compra 100% segura</p>
+                    <p class="pn">&copy; 2024 Colifas. Todos los derechos reservados.</p>
+                    <img src="../imagenes/payment.png" alt="medios de pagos">
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Novedades</p>
+                    <div class="contentF">
+                        <p class="pn">Suscribete a nuentro canal informativo ahora y mantente al dia con nuestras
+                            colecciones y ofertas exclusivas.</p>
+                        <input type="email" placeholder="Ingresa el correo aqui...">
+                        <button>Suscribete</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </footer>
 
-    
-    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script> 
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>
